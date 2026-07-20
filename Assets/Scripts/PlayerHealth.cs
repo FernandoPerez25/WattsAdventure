@@ -84,17 +84,6 @@ public class PlayerHealth : MonoBehaviour
             isDead = true;
             gameOverManager.ShowGameOver();
         }
-
-
-        if (Input.GetKeyDown(KeyCode.K))
-        {
-            TakeDamage(1, transform.position + Vector3.left);
-        }
-
-        if (Input.GetKeyDown(KeyCode.L))
-        {
-            Heal(1);
-        }
     }
 
     public void Heal(int amount)
